@@ -4,14 +4,14 @@ import Button from '@material-ui/core/Button';
 
 
 const ButtonKit = (props) => {
-  
-    return(
+
+    return (
         <>
-           
-                <Button variant="outlined" color="primary" onClick={()=>props.onClick()}>
-                    {props.label}
-                </Button>
-            
+
+            <Button variant="outlined" color="primary" onClick={() => props.onClick()}>
+                {props.label}
+            </Button>
+
 
         </>
     )

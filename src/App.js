@@ -1,10 +1,11 @@
 import React from 'react'
-import Ganre from './Genre'
+import ShopInfo from './ShopInfo'
 
 const App = () => {
     return (
         <>
             <h1>test</h1>
+            <ShopInfo/>
         </>
     )
 }
