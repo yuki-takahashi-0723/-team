@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ShopInfo = () => {
   //APIから受けっとた店舗情報のstate
   const [shops, setShops] = useState([]);
-  const [position, setPosition] = useState({});
+  const [position, setPosition] = useState([]);
 
   // const select = (position) => {
   //   console.log('hello')
@@ -35,7 +35,7 @@ const ShopInfo = () => {
   // return (
   //   <h1>aaa</h1>
   // )
-
+  
   return (
     shops.map((shop, index) => {
       //店舗名、住所、営業時間をオブジェクトに指定している
