@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import ButtonKit from './uikit/ButtonKit'
+
 //apiのjsonデータを取得して、表示させるのが課題
 const Special = () => {
 
@@ -27,10 +29,15 @@ const Special = () => {
             }
             console.log(FeaturesArray)
             return ( //tostring()はオブジェクトを表す文字列を返します
-                <div key={index.toString()}>
-                    <p>{FeaturesArray.featureCode}</p>
-                    <p>{FeaturesArray.featureName}</p>
-                </div>
+                features.map(feature => {
+                    <div key={index.toString()}>
+                        <p>{FeaturesArray.featureCode}</p>
+                        <p>{FeaturesArray.featureName}</p>
+                    </div>
+                    return (<ButtonKit label={feature.name} onClick=
+                        {() => console.log(feature.name)} key={feature.code} />
+                    )
+                })
             )
         })
     )
